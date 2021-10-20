@@ -1,0 +1,16 @@
+F:\studies\platzi\csharp-netcore\bin\Debug\net5.0\csharp-netcore.exe
+F:\studies\platzi\csharp-netcore\bin\Debug\net5.0\csharp-netcore.deps.json
+F:\studies\platzi\csharp-netcore\bin\Debug\net5.0\csharp-netcore.runtimeconfig.json
+F:\studies\platzi\csharp-netcore\bin\Debug\net5.0\csharp-netcore.runtimeconfig.dev.json
+F:\studies\platzi\csharp-netcore\bin\Debug\net5.0\csharp-netcore.dll
+F:\studies\platzi\csharp-netcore\bin\Debug\net5.0\ref\csharp-netcore.dll
+F:\studies\platzi\csharp-netcore\bin\Debug\net5.0\csharp-netcore.pdb
+F:\studies\platzi\csharp-netcore\obj\Debug\net5.0\csharp-netcore.csproj.AssemblyReference.cache
+F:\studies\platzi\csharp-netcore\obj\Debug\net5.0\csharp-netcore.GeneratedMSBuildEditorConfig.editorconfig
+F:\studies\platzi\csharp-netcore\obj\Debug\net5.0\csharp-netcore.AssemblyInfoInputs.cache
+F:\studies\platzi\csharp-netcore\obj\Debug\net5.0\csharp-netcore.AssemblyInfo.cs
+F:\studies\platzi\csharp-netcore\obj\Debug\net5.0\csharp-netcore.csproj.CoreCompileInputs.cache
+F:\studies\platzi\csharp-netcore\obj\Debug\net5.0\csharp-netcore.dll
+F:\studies\platzi\csharp-netcore\obj\Debug\net5.0\ref\csharp-netcore.dll
+F:\studies\platzi\csharp-netcore\obj\Debug\net5.0\csharp-netcore.pdb
+F:\studies\platzi\csharp-netcore\obj\Debug\net5.0\csharp-netcore.genruntimeconfig.cache
