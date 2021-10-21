@@ -7,31 +7,19 @@ namespace csharp_netcore
     {
         static void Main(string[] args)
         {
-            /*
-            // Se crea una variable a partir de la clase Escuela. Ojo con los parámetros
-            var escuela = new Escuela("Killki University", 2019);
-            // Los valores que no están como parámetros se asignan directamente
-            escuela.Pais = "Perú";
-            escuela.Ciudad = "Lima";
-            // Tipo de escuela es del tipo TiposEscuela, por lo tanto solo se le pueden
-            //    asignar valores de la enumeración correspondiente.
-            escuela.TipoEscuela = TiposEscuela.Secundaria;
-            */
-
-            // Hacer lo mismo que el de arriba pero con otro constructor
             var escuela = new Escuela("Killki University", 2019, TiposEscuela.Secundaria,
-                ciudad:"Lima");
+                ciudad: "Lima");
             escuela.Pais = "Perú";
 
-            /*
-            // Imprimir datos
-            Console.WriteLine(escuela.Nombre);
-            */
-            // Imprimir datos con método ToString() sobreescrito
-            // Esta línea (imprimir objeto) de manera predeterminada imprime el nombre 
-            //    completo del objeto. Para que imprima otra cosa, sobreescribie el método en
-            //    la clase Escuela
+            var curso1 = new Curso() { Nombre = "101"};
+            var curso2 = new Curso() { Nombre = "201"};
+            var curso3 = new Curso() { Nombre = "301"};
+
             Console.WriteLine(escuela);
+            Console.WriteLine("========================");
+            Console.WriteLine(curso1.UniqueId + " - " + curso1.Nombre);
+            Console.WriteLine(curso2.UniqueId + " - " + curso2.Nombre);
+            Console.WriteLine(curso3.UniqueId + " - " + curso3.Nombre);
         }
     }
 }
