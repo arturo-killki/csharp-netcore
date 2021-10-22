@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\studies\\platzi\\csharp-netcore\\csharp-netcore.csproj": {}
+    "F:\\Studies\\Platzi\\csharp-netcore\\csharp-netcore.csproj": {}
   },
   "projects": {
-    "F:\\studies\\platzi\\csharp-netcore\\csharp-netcore.csproj": {
+    "F:\\Studies\\Platzi\\csharp-netcore\\csharp-netcore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\platzi\\csharp-netcore\\csharp-netcore.csproj",
+        "projectUniqueName": "F:\\Studies\\Platzi\\csharp-netcore\\csharp-netcore.csproj",
         "projectName": "csharp-netcore",
-        "projectPath": "F:\\studies\\platzi\\csharp-netcore\\csharp-netcore.csproj",
+        "projectPath": "F:\\Studies\\Platzi\\csharp-netcore\\csharp-netcore.csproj",
         "packagesPath": "C:\\Users\\apanana\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\platzi\\csharp-netcore\\obj\\",
+        "outputPath": "F:\\Studies\\Platzi\\csharp-netcore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
