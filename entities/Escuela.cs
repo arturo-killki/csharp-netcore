@@ -23,7 +23,7 @@ namespace CoreEscuela.Entidades
         // Atributo tipo de escuela trabaja con una enumeración
         // Tener en cuenta que TipoEscuela será del tipo TiposEscuela
         public TiposEscuela TipoEscuela { get; set; }
-
+        public Curso[] Cursos { get; set; }
 
         // Acá se arma el constructor que inicializa los parámetros
         // El parámetro puede tener el mismo nombre de un atributo o no. Si tienen el
