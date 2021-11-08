@@ -81,9 +81,9 @@ namespace csharp_netcore
 
         private static void ImprimirCursosEscuela(Escuela escuela)
         {
-            Console.WriteLine("====================");
-            Console.WriteLine("Cursos de la ESCUELA");
-            Console.WriteLine("====================");
+            Console.WriteLine("==============================");
+            Console.WriteLine("Cursos de la ESCUELA de KILLKI");
+            Console.WriteLine("==============================");
 
             // Verificando que los obejtos no estén como nulos
             if (escuela != null && escuela.Cursos != null)
