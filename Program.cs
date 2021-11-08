@@ -3,6 +3,8 @@ using CoreEscuela.Entidades;
 
 // Probando actualización de la RAMA 3
 
+// Y con esto actualización desde GitHUB
+
 namespace csharp_netcore
 {
     class Program
