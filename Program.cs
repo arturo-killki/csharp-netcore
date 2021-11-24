@@ -1,9 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
 using CoreEscuela.Entidades;
-
-// Probando actualización de la RAMA 3
-
-// Y con esto actualización desde GitHUB
 
 namespace csharp_netcore
 {
@@ -15,70 +12,61 @@ namespace csharp_netcore
                 ciudad: "Lima");
             escuela.Pais = "Perú";
 
-            // Pasar la creación de cursos a arreglos
+            // Pasar la creación de curso de Array a Colecciones
+            // Se usa colección tipo lista
+            // También hay que modidifcar en la entidad curso para que se indique que se 
+            //     trabajará con una colección y no con un array
+            // Respecto al array anterior, acá le agregamos hormada
+            escuela.Cursos = new List<Curso>(){
+                new Curso() {Nombre="101", Jornada=TiposJornada.Mañana},
+                new Curso() {Nombre="201", Jornada=TiposJornada.Mañana},
+                new Curso() {Nombre="301", Jornada=TiposJornada.Mañana}
+            };
             /*
-            var curso1 = new Curso() { Nombre = "101"};
-            var curso2 = new Curso() { Nombre = "201"};
-            var curso3 = new Curso() { Nombre = "301"};
-            */
-
-            /*
-            // Se define el arreglo
-            var arregloCursos = new Curso[3];
-            // Elemento 1 del arreglo
-            arregloCursos[0] = new Curso
-            {
-                Nombre = "101"
-            };
-            // Elemento 2 del arreglo, creado de otro modo
-            var curso2 = new Curso
-            {
-                Nombre = "201"
-            };
-            arregloCursos[1] = curso2;
-            // Eleemnto 3 del arreglo
-            arregloCursos[2] = new Curso
-            {
-                Nombre = "301"
-            };
-            */
-            /*
-            // La forma anterior se puede optimizar del siguiente modo
-            Curso[] arregloCursos = {
-                new Curso() {Nombre="101"},
-                new Curso() {Nombre="201"},
-                new Curso() {Nombre="301"}
-            };
-            // Y para asignar los cursos a Escuela, que ya tiene el atributo de Cursos[]
-            escuela.Cursos = arregloCursos;
-            */
-
-            // Última optimización de esta parte del código
             escuela.Cursos = new Curso[] {
                 new Curso() {Nombre="101"},
                 new Curso() {Nombre="201"},
                 new Curso() {Nombre="301"}
             };
-
-            /*
-            Console.WriteLine(escuela);
-            Console.WriteLine("========================");
-            // Cambiar la impresión de los cursos línea por línea a por arreglo
-            // Se utiliza un método para esta operación
-            / *
-            Console.WriteLine(curso1.UniqueId + " - " + curso1.Nombre);
-            Console.WriteLine(curso2.UniqueId + " - " + curso2.Nombre);
-            Console.WriteLine(curso3.UniqueId + " - " + curso3.Nombre);
-            * /
-            ImprimirCursosWhile(arregloCursos);
-            ImprimirCursosDoWhile(arregloCursos);
-            ImprimirCursosFor(arregloCursos);
-            ImprimirCursosForeach(arregloCursos);
             */
+
+            // A las colecciones, a diferencia de los array se les puede agregar elementos
+            escuela.Cursos.Add(new Curso { Nombre = "102", Jornada = TiposJornada.Tarde });
+            escuela.Cursos.Add(new Curso { Nombre = "202", Jornada = TiposJornada.Tarde });
+            escuela.Cursos.Add(new Curso { Nombre = "302", Jornada = TiposJornada.Tarde });
+            // Incluso se le puede agregar una colección completa
+            var otraColeccion = new List<Curso>(){
+                new Curso {Nombre="401", Jornada=TiposJornada.Noche},
+                new Curso {Nombre="501", Jornada=TiposJornada.Noche},
+                new Curso {Nombre="601", Jornada=TiposJornada.Noche}
+            };
+            escuela.Cursos.AddRange(otraColeccion);
+
+            // Para ejemplo de cómo remover un curso usando delegados
+            // Se removerá el curso 301
+            /*
+            Predicate<Curso> miAlgoritmo = Predicado;
+            escuela.Cursos.RemoveAll(miAlgoritmo);
+            */
+            // Se puede escribir directo como un delegado
+            /*
+            escuela.Cursos.RemoveAll(delegate (Curso cur)
+                {
+                    return cur.Nombre == "302";
+                });
+            */
+            // También se puede escribir como expresión Lambda
+            escuela.Cursos.RemoveAll((cur) => cur.Nombre == "401");
+
 
             // Vamos a enviar a una función la impresión de los cursos
             ImprimirCursosEscuela(escuela);
 
+        }
+
+        private static bool Predicado(Curso curobj)
+        {
+            return curobj.Nombre == "301";
         }
 
         private static void ImprimirCursosEscuela(Escuela escuela)

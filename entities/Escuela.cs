@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace CoreEscuela.Entidades
 {
     class Escuela
@@ -23,7 +25,11 @@ namespace CoreEscuela.Entidades
         // Atributo tipo de escuela trabaja con una enumeración
         // Tener en cuenta que TipoEscuela será del tipo TiposEscuela
         public TiposEscuela TipoEscuela { get; set; }
+        // Se cambia del tipo array al tipo Colección
+        public List<Curso> Cursos { get; set; }
+        /*
         public Curso[] Cursos { get; set; }
+        */
 
         // Acá se arma el constructor que inicializa los parámetros
         // El parámetro puede tener el mismo nombre de un atributo o no. Si tienen el
@@ -52,7 +58,7 @@ namespace CoreEscuela.Entidades
             Ciudad = ciudad;
         }
 
-        
+
         // Acá se sobreescribe el método ToString() para esta clase con el fin de que al 
         //    imprimir el objeto escuela muestre los datos que nos interesa
         // Para indicar que se está sobreescribiendo usar la palabra "override"
